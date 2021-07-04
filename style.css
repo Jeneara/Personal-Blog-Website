@@ -1,5 +1,174 @@
-// at the top of your main CSS file
+/* CSS Personal Blog Website */
 
-@import “./layout”;
-@import “./images”;
-@import “./blog-cards”;
+
+ /* Anything smaller than first breakpoint 600px */
+.container {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  justify-content: center;
+  
+  grid-template-columns: 100px, 300px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+  "hd"
+  "sr"
+  "mn"
+  "bl"
+  "ft"; 
+
+}
+
+.box {
+  display:flex;
+  justify-content: left;
+  padding: 20px;
+}
+
+.logo {
+  grid-area: hd;
+  width: 100%;
+  object-fit: cover;
+}
+
+.search {
+  grid-area: sr; 
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+
+.menubtn {
+  background-color: #AA6075;
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+}
+
+.vert-menu {
+  grid-area: mn;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+
+}
+.vert-menu-drop {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+  text-align: center;
+}
+
+.vert-menu-drop a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  }
+
+.vert-menu-drop a:hover {
+  background-color: lightgray
+}
+
+.vert-menu:hover .vert-menu-drop {
+  display: block;
+}
+
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+
+  grid-area: bl;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 1em;
+  justify-content: center;
+  
+}
+
+.content {
+  text-align: center;
+  background: #eee;
+  align-items: center;
+  justify-content: center;
+  /* height: 200px; */
+  width: 400px;
+  border-radius: 25px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  position: relative; 
+  /* box-shadow: 0 0 0 2px rgb(0 0 0 / 20%); */
+  /* transition: all 200ms ease-out; */
+}
+
+.content:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.blogimage {
+  border-radius: 25px;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.blogtext { 
+  position: absolute; 
+  top: 40%; 
+  left: 0;
+  text-align: center; 
+  /* width: 100%;  */
+  background-color: black; opacity:0.5;
+}
+
+.readmore-btn {
+  background-color: #AA6075;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.footer{
+  grid-area: ft;
+  background-color: #AA6075;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ /* Anything smaller than first breakpoint 600px */
+
+/* Medium Screens */
+/* @media (min-width: 600px) and (max-width:1100px) {
+  .container {
+    // rules for medium-sized screen
+
+
+  }
+} */
+
+/* Large Screens */
+/* @media (min-width:1101px) {
+  .container {
+    // rules for large screen
+
+  }
+} */ 
