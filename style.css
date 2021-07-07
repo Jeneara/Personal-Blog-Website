@@ -14,7 +14,6 @@
     margin-left: 20px;
     margin-right: 20px;
     justify-content: center;
-    grid-template-columns: 100px, 300px;
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas: "hd" "sr" "mn" "bl" "ft";
 }
