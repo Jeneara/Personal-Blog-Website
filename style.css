@@ -4,7 +4,7 @@
 @import url(blogpost.css);
 @import url(footer.css);
 
-/* Anything smaller than first breakpoint 600px */
+/* Main CSS */
 
 .container {
     display: grid;
@@ -36,7 +36,6 @@
     width: 100%;
     font-size: 24px;
     text-align: center;
-    /* border-radius: 20px; */
 }
 
 .menubtn {
@@ -84,29 +83,3 @@
 .vert-menu:hover .vert-menu-drop {
     display: block;
 }
-
-
-/* Anything smaller than first breakpoint 600px */
-
-
-/* Medium Screens */
-
-
-/* @media (min-width: 600px) and (max-width:1100px) {
-  .container {
-    // rules for medium-sized screen
-
-
-  }
-} */
-
-
-/* Large Screens */
-
-
-/* @media (min-width:1101px) {
-  .container {
-    // rules for large screen
-
-  }
-} */
