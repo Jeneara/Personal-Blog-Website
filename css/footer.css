@@ -1,0 +1,40 @@
+    /* Footer CSS */
+    
+    .footer {
+        grid-area: ft;
+        display: grid;
+        justify-content: center;
+        grid-template-areas: "soc" "cop";
+        background-color: #AA6075;
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    .social {
+        grid-area: soc;
+        display: flex;
+        justify-content: center;
+    }
+    /* Custom Icons */
+    
+    .fa-facebook-square {
+        color: #eee;
+        font-size: 60px;
+        padding: 10px;
+    }
+    
+    .fa-twitter-square {
+        color: #eee;
+        font-size: 60px;
+        padding: 10px;
+    }
+    
+    .fa-envelope {
+        color: #eee;
+        font-size: 60px;
+        padding: 10px;
+    }
+    
+    .copyright {
+        grid-area: cop;
+    }
