@@ -37,4 +37,5 @@
     
     .copyright {
         grid-area: cop;
+        text-align: center;
     }

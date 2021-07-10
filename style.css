@@ -1,72 +1,76 @@
-/* CSS Personal Blog Website */
-
-@import url(css/header.css);
-@import url(css/bloggrid.css);
-@import url(css/blogpost.css);
-@import url(css/footer.css);
-
-/* Main CSS */
-
-.container {
-    display: grid;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    justify-content: center;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: "hd" "sr" "mn" "bl" "ft";
-}
-
-.box {
-    display: flex;
-    justify-content: left;
-    padding: 20px;
-}
-
-.menubtn {
-    background-color: #AA6075;
-    color: white;
-    padding: 16px;
-    border: none;
-    cursor: pointer;
-    font-size: 28px;
-    width: 100%;
-    border-radius: 20px;
-}
-
-.vert-menu {
-    grid-area: mn;
-    width: 100%;
-    position: relative;
-    display: inline-block;
-}
-
-.vert-menu-drop {
-    display: none;
-    width: 100%;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-    text-align: center;
-}
-
-.vert-menu-drop a {
-    background-color: #eee;
-    color: black;
-    display: block;
-    padding: 20px;
-    font-size: 28px;
-    text-decoration: none;
-    border-radius: 20px;
-}
-
-.vert-menu-drop a:hover {
-    background-color: lightgray
-}
-
-.vert-menu:hover .vert-menu-drop {
-    display: block;
-}
+    /* CSS Personal Blog Website */
+    
+    @import url(css/header.css);
+    @import url(css/bloggrid.css);
+    @import url(css/blogpost.css);
+    @import url(css/footer.css);
+    /* Main CSS */
+    
+    .container {
+        display: grid;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: repeat(auto-fill);
+        grid-auto-rows: repeat(auto-fill);
+        grid-template-areas: "hd" "sr" "mn" "bl" "ft";
+    }
+    
+    .box {
+        display: flex;
+        /* justify-content: left; */
+        padding: 20px;
+    }
+    
+    .menubtn {
+        background-color: #AA6075;
+        color: white;
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+        font-size: 28px;
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    .vert-menu {
+        grid-area: mn;
+        width: 100%;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .vert-menu-drop {
+        display: none;
+        width: 100%;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100%;
+        z-index: 1;
+        text-align: center;
+    }
+    
+    .vert-menu-drop a {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 20px;
+        font-size: 28px;
+        text-decoration: none;
+        border-radius: 20px;
+    }
+    
+    .vert-menu-drop a:hover {
+        background-color: lightgray
+    }
+    
+    .vert-menu:hover .vert-menu-drop {
+        display: block;
+    }
+    /* @media only screen and (max-width: 767px) {
+        body .pull-right {
+            float: none!important
+        }
+    } */
