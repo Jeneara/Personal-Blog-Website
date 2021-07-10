@@ -13,6 +13,7 @@
     .social {
         grid-area: soc;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
     /* Custom Icons */

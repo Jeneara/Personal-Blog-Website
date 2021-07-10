@@ -16,11 +16,11 @@
         grid-template-columns: repeat(auto-fill);
         grid-auto-rows: repeat(auto-fill);
         grid-template-areas: "hd" "sr" "mn" "bl" "ft";
+        overflow: hidden;
     }
     
     .box {
         display: flex;
-        /* justify-content: left; */
         padding: 20px;
     }
     
@@ -69,8 +69,3 @@
     .vert-menu:hover .vert-menu-drop {
         display: block;
     }
-    /* @media only screen and (max-width: 767px) {
-        body .pull-right {
-            float: none!important
-        }
-    } */
